@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 import short_url as surl
 
 
-host = "http://localhost:5000/"
+host = "https://go-tiny-url.herokuapp.com/"
 
 
 @app.route('/')
