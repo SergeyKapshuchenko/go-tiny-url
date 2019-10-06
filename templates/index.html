@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Url Shortener
+</h1>
+<h2 class="subtitle">
+  Build and protect your brand using short links.
+</h2>
+{% endblock %}
+
+{% block link%}
+    {% if not short_url %}
+        <div class="column is-4 is-offset-4">
+        <h3 class="title">Put your link here:</h3>
+            <div class="box">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="notification is-info">
+                        {{ messages[0] }}
+                    </div>
+                {% endif %}
+                {% endwith %}
+                <form method="POST" action="">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="url" name="url" placeholder="Shorten your link" autofocus="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <button class="button is-block is-info is-large is-fullwidth">Shorten</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% else %}
+    <div class="column is-4 is-offset-4">
+        <h3 class="title is-4">Enjoy, your shortened link:</h3>
+        <div class="box">
+            <a href="{{short_url}}"> {{short_url}}</a>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1 class="title">
+    Welcome, {{ current_user.username }}!!!
+  </h1>
+{% endblock %}
+
+{% block link %}
+  <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-scrollable">
+      <thead>
+      <h1 class="title">
+          Your links
+      </h1>
+      <tr>
+          <th>Link</th>
+          <th>Short link</th>
+      </tr>
+      </thead>
+      <tbody>
+          {% for row in links %}
+              <tr>
+                  <td>{{row[1]}}</td>
+                  <td>{{row[0]}}</td>
+              </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+  {% endblock %}

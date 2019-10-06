@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-scrollable">
+    <thead>
+    <h2>
+        Link stats
+    </h2>
+    <tr>
+        <th>Link</th>
+        <th>Clicks</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ link.url }}</td>
+            <td>{{ link.counter }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

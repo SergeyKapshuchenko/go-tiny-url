@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-scrollable">
+    <thead>
+    <h2>
+        Links
+    </h2>
+    <tr>
+        <th>Place</th>
+        <th>Link</th>
+        <th>Clicks</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for link in top %}
+            <tr>
+                <td>{{ link[0] }}</td>
+                <td>{{ link[1] }}</td>
+                <td>{{ link[2] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

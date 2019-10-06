@@ -1,0 +1,11 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+short_url/__init__.py
+short_url.egg-info/PKG-INFO
+short_url.egg-info/SOURCES.txt
+short_url.egg-info/dependency_links.txt
+short_url.egg-info/top_level.txt
