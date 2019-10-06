@@ -1,5 +1,6 @@
 # go-tiny-url
-Link shortener
+Link shortener Service.
+#
 Shorten, create and share tiny links for your business, daily life.
 Project provides Authentication and Authorization with Flask. Sign up and registration form for every user.
 You can check your own generated links in Profile.
