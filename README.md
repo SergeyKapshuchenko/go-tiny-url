@@ -6,7 +6,7 @@ Project provides Authentication and Authorization with Flask. Sign up and regist
 You can check your own generated links in Profile.
 Also you can check top 10 links ( clicks on links).
 You can find information about any short "go-tiny-url" URL. You just need to add "+" in the end of your short link.
-######Example: 
+###### Example: 
 ```
  "https://go-tiny-url.herokuapp.com/short_link" --> "https://go-tiny-url.herokuapp.com/short_link+"
 ```
