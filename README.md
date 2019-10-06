@@ -1,4 +1,7 @@
 # go-tiny-url
+#
+You can find my project on Heroku: https://go-tiny-url.herokuapp.com
+#
 Link shortener Service.
 #
 Shorten, create and share tiny links for your business, daily life.
@@ -9,4 +12,3 @@ You can find information about any short "go-tiny-url" URL. You just need to add
 Example: https://go-tiny-url.herokuapp.com/short_link --> https://go-tiny-url.herokuapp.com/short_link+
 
 
-#You can find my project on Heroku: https://go-tiny-url.herokuapp.com
